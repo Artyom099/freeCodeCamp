@@ -9,9 +9,18 @@ while (i >= 0) {
 
 
 // Setup
-const myArray = [];
+const myArray1 = [];
 
 // Only change code below this line
 for (let i = 1; i <= 5; i++) {
-  myArray.push(i);
+  myArray1.push(i);
+}
+
+
+// Setup
+const myArray2 = [];
+
+// Only change code below this line
+for (let i = 1; i < 10; i += 2) {
+  myArray2.push(i);
 }
