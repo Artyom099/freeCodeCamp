@@ -61,3 +61,10 @@ function randomRange(myMin, myMax) {
     return Math.floor(Math.random() * (myMax - myMin + 1)) + myMin;
     // Only change code above this line
 }
+
+
+
+function checkEqual(a, b) {
+    return a == b ? 'Equal' : 'Not Equal';
+}
+checkEqual(1, 2);
