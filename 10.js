@@ -60,14 +60,13 @@ const {today, tomorrow} = HIGH_TEMPERATURES;
 
 
 
-const HIGH_TEMPERATURES = {
+const HIGH_TEMPERATURES1 = {
     yesterday: 75,
     today: 77,
     tomorrow: 80
 };
-
 // Only change code below this line
-const { today: highToday, tomorrow: highTomorrow } = HIGH_TEMPERATURES;
+const { today: highToday1, tomorrow: highTomorrow } = HIGH_TEMPERATURES1;
 // Only change code above this line
 
 
