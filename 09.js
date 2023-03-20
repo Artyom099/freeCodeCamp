@@ -43,7 +43,7 @@ function lookUpProfile(name, prop) {
     // Only change code above this line
 }
 
-lookUpProfile("Akira", "likes");
+//lookUpProfile("Akira", "likes");
 
 
 
@@ -61,3 +61,45 @@ function randomRange(myMin, myMax) {
     return Math.floor(Math.random() * (myMax - myMin + 1)) + myMin;
     // Only change code above this line
 }
+
+
+
+function checkEqual(a, b) {
+    return a == b ? 'Equal' : 'Not Equal';
+}
+
+
+
+
+function checkSign(num) {
+    return (num > 0) ? 'positive'
+    : (num == 0) ? 'zero'
+    : 'negative';
+}
+
+
+
+
+function countdown(n) {    // recursion
+    if (n < 1) {
+      return [];
+    } else {
+      const countArray = countdown(n - 1);
+      countArray.unshift(n);
+      return countArray;
+    }
+}
+
+
+
+function rangeOfNumbers(startNum, endNum) {
+    if (startNum > endNum) {
+      return [];
+    } else {
+      const countArray = rangeOfNumbers(startNum, endNum - 1);
+      countArray.push(endNum);
+      return countArray;
+    }
+};
+
+console.log(rangeOfNumbers(1, 5));
