@@ -77,3 +77,15 @@ function checkSign(num) {
     : 'negative';
 }
 checkSign(10);
+
+
+
+function countdown(n) {    // recursion
+    if (n < 1) {
+      return [];
+    } else {
+      const countArray = countdown(n - 1);
+      countArray.unshift(n);
+      return countArray;
+    }
+}
