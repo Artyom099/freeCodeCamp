@@ -43,7 +43,7 @@ function lookUpProfile(name, prop) {
     // Only change code above this line
 }
 
-lookUpProfile("Akira", "likes");
+//lookUpProfile("Akira", "likes");
 
 
 
@@ -67,7 +67,7 @@ function randomRange(myMin, myMax) {
 function checkEqual(a, b) {
     return a == b ? 'Equal' : 'Not Equal';
 }
-checkEqual(1, 2);
+
 
 
 
@@ -76,7 +76,7 @@ function checkSign(num) {
     : (num == 0) ? 'zero'
     : 'negative';
 }
-checkSign(10);
+
 
 
 
@@ -89,3 +89,17 @@ function countdown(n) {    // recursion
       return countArray;
     }
 }
+
+
+
+function rangeOfNumbers(startNum, endNum) {
+    if (startNum > endNum) {
+      return [];
+    } else {
+      const countArray = rangeOfNumbers(startNum, endNum - 1);
+      countArray.push(endNum);
+      return countArray;
+    }
+};
+
+console.log(rangeOfNumbers(1, 5));
