@@ -23,5 +23,14 @@ function freezeObj() {
       console.log(ex);
     }
     return MATH_CONSTANTS.PI;
-  }
-  const PI = freezeObj();
+}
+const PI = freezeObj();
+
+
+
+const magic = () => new Date(); // пример стрелочной ф-ии
+
+
+
+const myConcat = (arr1, arr2) => arr1.concat(arr2);
+console.log(myConcat([1, 2], [3, 4, 5]));
