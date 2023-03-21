@@ -131,3 +131,7 @@ function makeList(arr) {
   return failureItems;
 }
 const failuresList = makeList(result.failure);
+
+
+
+const createPerson = (name, age, gender) => ({ name, age, gender });
