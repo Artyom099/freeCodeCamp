@@ -158,3 +158,7 @@ export { uppercaseString, lowercaseString };
 
 // как импортировать ф-ю
 import { uppercaseString, lowercaseString } from './string_functions.js';
+
+
+// как импортировать файл
+import * as stringFunctions from './string_functions.js';
