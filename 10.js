@@ -149,3 +149,16 @@ class Vegetable {
 
 const carrot = new Vegetable('carrot');
 console.log(carrot.name); // Should display 'carrot'
+
+
+
+// как экспортировать ф-ю
+export { uppercaseString, lowercaseString };
+
+
+// как импортировать ф-ю
+import { uppercaseString, lowercaseString } from './string_functions.js';
+
+
+// как импортировать файл
+import * as stringFunctions from './string_functions.js';
