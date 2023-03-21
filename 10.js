@@ -200,4 +200,7 @@ const makeServerRequest2 = new Promise((resolve, reject) => {
   makeServerRequest2.then(result => {  // это надо было дописать
     console.log(result)
   })
+  makeServerRequest2.catch(error => {
+    console.log(error);
+  })
 });
