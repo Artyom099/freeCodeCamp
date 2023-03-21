@@ -149,3 +149,8 @@ class Vegetable {
 
 const carrot = new Vegetable('carrot');
 console.log(carrot.name); // Should display 'carrot'
+
+
+
+// как экспортировать ф-ю
+export { uppercaseString, lowercaseString };
