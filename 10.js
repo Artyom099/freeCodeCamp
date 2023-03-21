@@ -204,3 +204,10 @@ const makeServerRequest2 = new Promise((resolve, reject) => {
     console.log(error);
   })
 });
+
+
+
+
+let myString = "Hello, World!";
+let myRegex = /Hello/;
+let result1 = myRegex.test(myString);; //    Change this line
