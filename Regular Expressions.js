@@ -64,4 +64,10 @@ let myRegex11 = /[^aeiou0-9]/gi; // Change this line
 let result = quoteSample11.match(myRegex11); // Change this line
 
 
-// 12 -
+// 12 - '+' позволяет искать сдвоенные знаки и возвращать их 1 раз, а не 2 подряд
+let difficultSpelling = "Mississippi";
+let myRegex12 = /s+/g; // Change this line
+let result12 = difficultSpelling.match(myRegex12);
+
+
+// 13 -
