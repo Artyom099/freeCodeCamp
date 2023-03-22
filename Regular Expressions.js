@@ -52,10 +52,16 @@ let alphabetRegex = /[a-z]/gi; // Change this line
 let result9 = quoteSample9.match(alphabetRegex); // Change this line
 
 
-// 10 - ^ - ищет символы ., !, [, @, / and white space
+// 10 -
 let quoteSample10 = "Blueberry 3.141592653s are delicious.";
 let myRegex10 = /[h-s2-6]/gi; // Change this line
 let result10 = quoteSample10.match(myRegex10); // Change this line
 
 
-// 11 -
+// 11 - ^ - создает отрицательный набор символов для поиска (пишем то, что не ищем)
+let quoteSample11 = "3 blind mice.";
+let myRegex11 = /[^aeiou0-9]/gi; // Change this line
+let result = quoteSample11.match(myRegex11); // Change this line
+
+
+// 12 -
