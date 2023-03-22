@@ -22,4 +22,22 @@ let fccRegex = /freeCodeCamp/i; // i - позволяет игнорироват
 let result4 = fccRegex.test(myString);
 
 
-// 5
+// 5 - Extract Matches
+let extractStr = "Extract the word 'coding' from this string.";
+let codingRegex = /coding/; // Change this line
+let result5 = extractStr.match(/coding/);; // Change this line
+
+
+// 6 -
+let twinkleStar = "Twinkle, twinkle, little star";
+let starRegex = /Twinkle/gi; // Чтобы искать или извлекать шаблон более одного раза, можно использовать глобальный флаг поиска - g
+let result6 = twinkleStar.match(starRegex);; // Change this line
+
+
+// 7 - '.' заменяет любой символ в искомом слове
+let exampleStr = "Let's have fun with regular expressions!";
+let unRegex = /.un/; // Change this line
+let result = unRegex.test(exampleStr);
+
+
+// 8 -
