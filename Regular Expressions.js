@@ -37,7 +37,13 @@ let result6 = twinkleStar.match(starRegex);; // Change this line
 // 7 - '.' заменяет любой символ в искомом слове
 let exampleStr = "Let's have fun with regular expressions!";
 let unRegex = /.un/; // Change this line
-let result = unRegex.test(exampleStr);
+let result7 = unRegex.test(exampleStr);
 
 
-// 8 -
+// 8 - Надо найти все гласные с помощью [..] и gi и метода .match
+let quoteSample = "Beware of bugs in the above code; I have only proved it correct, not tried it.";
+let vowelRegex = /[aeiou]/gi; // Change this line
+let result8 = quoteSample.match(vowelRegex); // Change this line
+
+
+// 9 -
