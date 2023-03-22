@@ -49,4 +49,13 @@ let result8 = quoteSample.match(vowelRegex); // Change this line
 // 9 - Match all the letters in the string quoteSample9 | с помощью [a-z]
 let quoteSample9 = "The quick brown fox jumps over the lazy dog.";
 let alphabetRegex = /[a-z]/gi; // Change this line
-let result = quoteSample9.match(alphabetRegex); // Change this line
+let result9 = quoteSample9.match(alphabetRegex); // Change this line
+
+
+// 10 - ^ - ищет символы ., !, [, @, / and white space
+let quoteSample10 = "Blueberry 3.141592653s are delicious.";
+let myRegex10 = /[h-s2-6]/gi; // Change this line
+let result10 = quoteSample10.match(myRegex10); // Change this line
+
+
+// 11 -
