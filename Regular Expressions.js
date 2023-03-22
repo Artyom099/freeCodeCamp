@@ -46,4 +46,7 @@ let vowelRegex = /[aeiou]/gi; // Change this line
 let result8 = quoteSample.match(vowelRegex); // Change this line
 
 
-// 9 -
+// 9 - Match all the letters in the string quoteSample9 | с помощью [a-z]
+let quoteSample9 = "The quick brown fox jumps over the lazy dog.";
+let alphabetRegex = /[a-z]/gi; // Change this line
+let result = quoteSample9.match(alphabetRegex); // Change this line
