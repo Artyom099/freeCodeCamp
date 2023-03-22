@@ -70,4 +70,11 @@ let myRegex12 = /s+/g; // Change this line
 let result12 = difficultSpelling.match(myRegex12);
 
 
-// 13 -
+// 13 - '*' - ищет буквы, повторяющиеся больше 2х раз
+// Only change code below this line
+let chewieRegex = /Aa*/; // Change this line
+// Only change code above this line
+let result13 = chewieQuote.match(chewieRegex);
+
+
+// 14 -
