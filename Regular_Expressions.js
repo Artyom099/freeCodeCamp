@@ -110,5 +110,9 @@ function bouncer(arr) {
     }
     return localArr;
 }
-
 bouncer([7, "ate", "", false, 9]);
+
+
+
+// Заготовка для сортировки массива чисел по возрастанию
+arr.sort(function(a, b){return a - b});
