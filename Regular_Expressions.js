@@ -93,4 +93,46 @@ function frankenSplice(arr1, arr2, n) {
     localArr.splice(n, 0, ...arr1);
     return localArr;
 }
-console.log(frankenSplice([1, 2, 3], [4, 5, 6], 1));
+//console.log(frankenSplice([1, 2, 3], [4, 5, 6], 1));
+
+
+
+
+// Remove all falsy values from an array. Return a new array; do not mutate the original array.
+// Falsy values in JavaScript are false, null, 0, "", undefined, and NaN.
+// Hint: Try converting each value to a Boolean.
+function bouncer(arr) {
+    let localArr = [];
+    for (let i = 0; i < arr.length; i++) {
+      if (Boolean(arr[i]) == true) {
+        localArr.push(arr[i]);
+      }
+    }
+    return localArr;
+}
+bouncer([7, "ate", "", false, 9]);
+
+
+
+// Заготовка для сортировки массива чисел по возрастанию
+//arr.sort(function(a, b){return a - b});
+
+
+
+
+
+function chunkArrayInGroups(arr, size) {
+    let localArr1 = [];
+    for (let i = 0; i < arr.length; i += size) {
+        let localArr0 = [];
+        for (let j = 0; j < size; j++) {
+            if (arr[i + j] != undefined) {
+                localArr0.push(arr[j + i]);
+            }
+        }
+        localArr1.push(localArr0);
+    }
+    return localArr1;
+}
+//console.log(chunkArrayInGroups(["a", "b", "c", "d"], 2));
+//console.log(chunkArrayInGroups([0, 1, 2, 3, 4, 5], 4));
