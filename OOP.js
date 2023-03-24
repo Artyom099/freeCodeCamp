@@ -74,4 +74,17 @@ let beagle1 = Object.create(Animal.prototype); // Change this line
 
 
 
-//
+// Modify the code so that instances of Dog inherit from Animal
+function Animal() { }
+
+Animal.prototype = {
+    constructor: Animal,
+    eat: function() {
+    console.log("nom nom nom");
+  }
+};
+function Dog() { }
+
+// Only change code below this line
+let beagle2 = new Dog();
+Dog.prototype = Object.create(Animal.prototype);
