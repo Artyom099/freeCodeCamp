@@ -59,4 +59,19 @@ Animal.prototype = {
 
 
 
+//Use Object.create to make two instances of Animal named duck and beagle.
+function Animal() { }
+
+Animal.prototype = {
+    constructor: Animal,
+    eat: function() {
+    console.log("nom nom nom");
+    }
+};
+// Only change code below this line
+let duck1 = Object.create(Animal.prototype); // Change this line
+let beagle1 = Object.create(Animal.prototype); // Change this line
+
+
+
 //
