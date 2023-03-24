@@ -183,4 +183,11 @@ function Bird() {
 
 
 
+// Немедленное выполнение анонимной ф-ии
+(function () {
+    console.log("A cozy nest is ready");
+})();
+
+
+
 //
