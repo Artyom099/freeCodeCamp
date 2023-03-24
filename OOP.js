@@ -11,5 +11,5 @@ Dog.prototype = {
 };
 
 
-
-//
+// show this relationship with the isPrototypeOf method:
+Dog.prototype.isPrototypeOf(beagle);
