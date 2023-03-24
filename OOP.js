@@ -84,7 +84,24 @@ Animal.prototype = {
   }
 };
 function Dog() { }
-
 // Only change code below this line
 let beagle2 = new Dog();
 Dog.prototype = Object.create(Animal.prototype);
+
+
+
+// function Animal() { }
+function Bird() { }
+function Dog() { }
+
+Bird.prototype = Object.create(Animal.prototype);
+Dog.prototype = Object.create(Animal.prototype);
+// Only change code below this line
+let duck3 = new Bird();
+Bird.prototype.constructor = Bird;  // дописал это
+let beagle3 = new Dog();            // и это
+Dog.prototype.constructor = Dog;
+
+
+
+//
