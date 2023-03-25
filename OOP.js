@@ -31,18 +31,15 @@ Object.prototype.isPrototypeOf(Dog.prototype);
 function Cat(name) {
     this.name = name;
 }
-
 Cat.prototype = {
     constructor: Cat,
     // eat: function() {
     //   console.log("nom nom nom");
     // }
 };
-
 function Bear(name) {
     this.name = name;
 }
-
 Bear.prototype = {
     constructor: Bear,
     // eat: function() {
@@ -104,4 +101,105 @@ Dog.prototype.constructor = Dog;
 
 
 
-//
+
+// Add all necessary code so the Dog object inherits from Animal and the Dog's prototype constructor is set to Dog.
+// Then add a bark() method to the Dog object so that beagle can both eat() and bark().
+// The bark() method should print Woof! to the console.
+function Animal() { }
+Animal.prototype.eat = function() { console.log("nom nom nom"); };
+
+function Dog() { }
+
+// Only change code below this line
+Dog.prototype = Object.create(Animal.prototype);
+Dog.prototype.constructor = Dog;
+Dog.prototype.bark = function() {console.log('Woof!');}
+// Only change code above this line
+
+let beagle4 = new Dog();
+
+
+
+// Here's an example of Bird overriding the eat() method inherited from Animal:
+function Animal() { }
+Animal.prototype.eat = function() {
+    return "nom nom nom";
+};
+function Bird() { }
+
+Bird.prototype = Object.create(Animal.prototype);
+Bird.prototype.eat = function() {
+    return "peck peck peck";
+};
+
+
+
+// Override the fly() method for Penguin so that it returns the string Alas, this is a flightless bird.
+function Bird() { }
+Bird.prototype.fly = function() { return "I am flying!"; };
+function Penguin() { }
+Penguin.prototype = Object.create(Bird.prototype);
+Penguin.prototype.constructor = Penguin;
+
+// Only change code below this line
+Penguin.prototype.fly = function() {return 'Alas, this is a flightless bird.'}
+// Only change code above this line
+let penguin = new Penguin();
+console.log(penguin.fly());
+
+
+
+// Create a mixin named glideMixin that defines a method named glide.
+// Then use the glideMixin to give both bird and boat the ability to glide.
+let bird = {
+    name: "Donald",
+    numLegs: 2
+};
+let boat = {
+    name: "Warrior",
+    type: "race-boat"
+};
+// Only change code below this line
+let glideMixin = function(obj) {
+    obj.glide = function() {
+        console.log("Gliding!");
+    };
+};
+glideMixin(bird);
+glideMixin(boat);
+
+
+
+
+//Change how weight is declared in the Bird function so it is a private variable.
+// Then, create a method getWeight that returns the value of weight 15.
+function Bird() {
+    let weight = 15;
+    this.getWeight = function() {return weight};
+}
+
+
+
+// Немедленное выполнение анонимной ф-ии
+(function () {
+    console.log("A cozy nest is ready");
+})();
+
+
+
+// Create a module named funModule to wrap the two mixins isCuteMixin and singMixin.
+// funModule should return an object.
+let funModule = (function() {
+    return {
+        isCuteMixin: function(obj) {
+            obj.isCute = function() {
+                true;
+            };
+        },
+        singMixin: function(obj) {
+                obj.sing = function() {
+            console.log("Singing to an awesome tune");
+            };
+        }
+    }
+})();
