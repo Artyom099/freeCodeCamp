@@ -31,18 +31,15 @@ Object.prototype.isPrototypeOf(Dog.prototype);
 function Cat(name) {
     this.name = name;
 }
-
 Cat.prototype = {
     constructor: Cat,
     // eat: function() {
     //   console.log("nom nom nom");
     // }
 };
-
 function Bear(name) {
     this.name = name;
 }
-
 Bear.prototype = {
     constructor: Bear,
     // eat: function() {
