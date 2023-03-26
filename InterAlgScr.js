@@ -21,3 +21,19 @@ sumAll([1, 4]);
 
 
 // 2 -
+
+
+
+// 3 -
+function destroyer(arr, a, b) {
+    // for (let i = 1; i < arr.length; i++) {
+    //     for (let j = 0; j < arr[0].length; j++) {
+    //         if (arr[0][j] == arr[i]) {
+    //             arr[0].slice(i, 1);
+    //         }
+    //     }
+    // }
+    return arr, a, b;
+}
+
+console.log(destroyer([1, 2, 3, 1, 2, 3], 2, 3));
