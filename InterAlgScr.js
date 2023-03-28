@@ -36,4 +36,28 @@ function destroyer(arr) {
     return arr[0];
 }
 
-console.log(destroyer([1, 2, 3, 1, 2, 3], 2, 3));
+//console.log(destroyer([1, 2, 3, 1, 2, 3], 2, 3));
+
+
+
+
+// 4
+function whatIsInAName(collection, source) {
+    let ans = [];
+    for (let i = 0; i < collection.length; i++) {                       // перебераем массив collection
+        let found = true;
+        for (const sourceProp in source) {                              // перебераем массив source
+            if (collection[i][sourceProp] !== source[sourceProp]) {
+                found = false;
+                break;
+            }
+        }
+    if (found) ans.push(collection[i]);             // если found == true, добавляем collection[i] в ans
+    }
+    return ans;
+}
+
+console.log(whatIsInAName([ { first: "Romeo", last: "Montague" },
+                            { first: "Mercutio", last: null },
+                            { first: "Tybalt", last: "Capulet" }],
+{ last: "Capulet" }));
