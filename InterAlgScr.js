@@ -19,9 +19,7 @@ function sumAll(arr) {
 sumAll([1, 4]);
 
 
-
 // 2 -
-
 
 
 // 3 - some dificults with input data
@@ -35,10 +33,7 @@ function destroyer(arr) {
     // }
     return arr[0];
 }
-
 //console.log(destroyer([1, 2, 3, 1, 2, 3], 2, 3));
-
-
 
 
 // 4
@@ -56,8 +51,78 @@ function whatIsInAName(collection, source) {
     }
     return ans;
 }
+// console.log(whatIsInAName([ { first: "Romeo", last: "Montague" },
+//                             { first: "Mercutio", last: null },
+//                             { first: "Tybalt", last: "Capulet" }],
+// { last: "Capulet" }));
 
-console.log(whatIsInAName([ { first: "Romeo", last: "Montague" },
-                            { first: "Mercutio", last: null },
-                            { first: "Tybalt", last: "Capulet" }],
-{ last: "Capulet" }));
+
+
+
+
+
+//, "Invalid"
+
+
+// const videoResolutions = ['P144', 'P240', 'P360', 'P480', 'P720', 'P1080', 'P1440', 'P2160']
+// const availableResolutions = ['P144', 'P480']
+
+// function checkArrayValues(existArray, receivedArray) {
+//     for( let i of receivedArray) {
+//         if (!Object.values(existArray).includes(i)) {
+//             return false
+//         }
+//     }
+//     return true
+
+    // receivedArray.forEach(el => {
+    //     if(!Object.values(existArray).includes(el)) {
+    //         console.log('valid');
+    //         return false
+    //        }
+    //        return true
+    // })
+//}
+
+console.log(checkArrayValues(videoResolutions, availableResolutions))
+
+
+
+// function checkArrayValues(existArray, receivedArray) {
+//     let exist
+//     for (let i in existArray) {
+//         exist = false
+//         for (let j in receivedArray) {
+//             if (i === j) {
+//                 exist = true
+//                 break
+//             }
+//         }
+//     }
+//     return exist
+// }
+
+// for (let i in availableResolutions) {
+//     if (videoResolutions.includes(i)) {
+//         resolutionOK = true
+//     } else {
+//         resolutionOK = false
+//     }
+// }
+
+
+// function checkArrayValues(existArray, receivedArray) {
+//     for (let i = 0; i < receivedArray.length; i++) {
+//         if (existArray.indexOf(receivedArray[i] == -1)) return false
+//     }
+//     return true
+// }
+
+// function checkArrayValues(existArray, receivedArray) {
+//     for (let i = 0; i < existArray.length; i ++) {
+//         if (!receivedArray.includes(existArray[i])) {
+//             return false;
+//         }
+//     }
+//     return true;
+// }
