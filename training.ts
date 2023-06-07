@@ -10,3 +10,5 @@ function checkArrayValues(existArray, receivedArray) {
 }
 
 console.log(checkArrayValues(videoResolutions, availableResolutions))
+console.log(!1)
+console.log(!-1)
